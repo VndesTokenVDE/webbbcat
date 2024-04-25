@@ -1,6 +1,7 @@
 import { Container, Grid, Stack, Tab, Tabs, Typography } from "@mui/material";
 import React, { useState } from "react";
 import OutlinedButton from "../components/Buttons/OutlinedButton";
+import LaunchButton from "../Buttons/LaunchButton";
 import Title from "../components/Title";
 import { section4Content } from "../utils/content";
 
@@ -24,9 +25,7 @@ const Section4 = () => {
              <p> {top.subtitle3}</p>
             </div>
 
-            <OutlinedButton arrow fit>
-              BUY NOW
-            </OutlinedButton>
+            <LaunchButton sx={{ borderRadius: 3 }} />
           </Stack>
         </Grid>
 
