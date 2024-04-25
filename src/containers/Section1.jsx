@@ -134,7 +134,7 @@ const Section1 = () => {
             spacing={4}
           >
 
-          <OutlinedButton target="_blank" href="https://bscscan.com/address/0xcb3e4688c4cd90022f74f5c70a775172ecab4d52" arrow fit>
+          <OutlinedButton target="_blank" href="https://bscscan.com/token/0xcb3e4688c4cd90022f74f5c70a775172ecab4d52" arrow fit>
             TOKEN ADDRESS
           </OutlinedButton>
           <CustomButton fullWidth={isSmallScreen}>BUY NOW</CustomButton>
