@@ -28,7 +28,7 @@ const {
 } = section1Content;
 
 const CustomButton = ({ children, ...props }) => (
-  <Button
+  <Button target="_blank" href="https://pancakeswap.finance/swap?outputCurrency=0xcB3E4688C4cd90022F74f5C70A775172eCaB4D52&chainId=56" arrow fit
     variant="outlined"
     sx={{
       borderRadius: 4,
@@ -134,11 +134,11 @@ const Section1 = () => {
             spacing={4}
           >
 
-          </Stack>
-          
           <OutlinedButton target="_blank" href="https://bscscan.com/address/0xcb3e4688c4cd90022f74f5c70a775172ecab4d52" arrow fit>
             TOKEN ADDRESS
           </OutlinedButton>
+          <CustomButton fullWidth={isSmallScreen}>BUY NOW</CustomButton>
+          </Stack>
           
         </Stack>
         
