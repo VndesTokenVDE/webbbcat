@@ -89,7 +89,7 @@ const Footer = () => {
                 flexWrap="wrap"
               >
                 {socials.map((item, i) => (
-                  <IconButton key={i}>
+                  <IconButton href="{item.url}" key={i}>
                     <item.icon />
                   </IconButton>
                 ))}
