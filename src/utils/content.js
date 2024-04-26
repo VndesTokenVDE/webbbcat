@@ -259,10 +259,10 @@ export const section9Content = {
 
 export const section10Content = {
   SOCIALS: [
-    { name: "Telegram", image: TelegramImage },
-    { name: "Discord", image: DiscordImage },
-    { name: "Reddit", image: RedditImage },
-    { name: "Twitter", image: TwitterImage },
+    { name: "Telegram", image: TelegramImage, link:'https://t.me/bbcatcoin' },
+    { name: "Discord", image: DiscordImage,link:'https://discord.com/bbcatcoin' },
+    { name: "Reddit", image: RedditImage,link:'https://reddit.com/bbcatcoin' },
+    { name: "Twitter", image: TwitterImage,link:'https://twitter.com/BBCatcoin' },
   ],
 };
 
@@ -384,12 +384,12 @@ export const footerContent = {
     subtitle: "Get the latest news and updates",
   },
   socials: [
-    { icon: BookIcon },
-    { icon: RedditIcon },
-    { icon: TwitterIcon },
-    { icon: ChatIcon },
-    { icon: TelegramIcon },
-    { icon: GitHubIcon },
+    { icon: BookIcon, url:"" },
+    { icon: RedditIcon, url:"" },
+    { icon: TwitterIcon, url:"https://twitter.com/BBCatcoin" },
+    { icon: ChatIcon, url:"" },
+    { icon: TelegramIcon, url:"https://t.me/bbcatcoin" },
+    { icon: GitHubIcon, url:"https://github.com/bbcatcoin/" },
   ],
   copyright: {
     left: "© 2024 BBCat, All Rights Reserved.",
