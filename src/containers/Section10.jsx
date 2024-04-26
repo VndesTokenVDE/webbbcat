@@ -39,16 +39,16 @@ const Section10 = () => {
             })}
           >
             <Stack alignItems="center">
-              <a href={link}>
+             
               <img
                 src={image}
                 style={{ width: "120px", objectFIt: "contain" }}
               />
 
               <Typography variant="body2" color="text.secondary">
-                {name}
+                <a href={link}> {name} </a>
               </Typography>
-              </a>
+             
             </Stack>
           </Grid>
         ))}
