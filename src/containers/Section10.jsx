@@ -21,7 +21,7 @@ const Section10 = () => {
         justifyContent="center"
         sx={{ px: { xs: 0, md: 5, lg: 8 } }}
       >
-        {SOCIALS.map(({ name, image }) => (
+        {SOCIALS.map(({ name, image,link }) => (
           <Grid
             item
             xs={6}
