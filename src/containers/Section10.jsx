@@ -2,6 +2,7 @@ import { Container, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import Title from "../components/Title";
 import { section10Content } from "../utils/content";
+import { Link } from 'react-router-dom';
 
 const { SOCIALS } = section10Content;
 
@@ -38,7 +39,7 @@ const Section10 = () => {
               },
             })}
           >
-            <Stack  href={link} alignItems="center">
+            <Stack  component={Link} to={link} alignItems="center">
              
               <img
                 src={image}
