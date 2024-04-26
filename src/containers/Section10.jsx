@@ -38,7 +38,7 @@ const Section10 = () => {
               },
             })}
           >
-            <Stack alignItems="center">
+            <Stack  href={link} alignItems="center">
              
               <img
                 src={image}
@@ -46,7 +46,7 @@ const Section10 = () => {
               />
 
               <Typography variant="body2" color="text.secondary">
-                <a href={link}> {name} </a>
+               {name}
               </Typography>
              
             </Stack>
