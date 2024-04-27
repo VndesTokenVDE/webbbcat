@@ -121,7 +121,7 @@ const handleClickScroll = (event) => {
                 <Typography variant="body2">EN</Typography>
               </LinkButton>
 
-              <LaunchButton sx={{ borderRadius: 3 }} />
+              <BuyNow sx={{ borderRadius: 3 }} />
             </Stack>
           )}
         </Stack>
