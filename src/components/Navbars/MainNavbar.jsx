@@ -14,7 +14,7 @@ import { navbarContent } from "../../utils/content";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 import LanguageIcon from "@mui/icons-material/Language";
-import LaunchButton from "../Buttons/LaunchButton";
+import BuyNow from "../Buttons/BuyNow";
 import MenuIcon from "@mui/icons-material/Menu";
 
 const { Logo } = navbarContent;
