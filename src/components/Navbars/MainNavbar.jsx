@@ -121,8 +121,8 @@ const handleClickScroll = (event) => {
                 <Typography variant="body2">EN</Typography>
               </LinkButton>
 
-              <LinkButton to={"join-us"} onClick={handleClickScroll} variant="contained" sx={{ borderRadius: 4}}>
-     <Typography variant="body2">BUY NƠ</Typography>
+              <LinkButton to={"join-us"} onClick={handleClickScroll} variant="contained">
+     <Typography variant="body2">BUY NOW</Typography>
     </LinkButton>
             </Stack>
           )}
