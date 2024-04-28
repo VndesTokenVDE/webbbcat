@@ -45,16 +45,7 @@ const CustomButton = ({ children, ...props }) => (
 );
 
 const Section1 = () => {
-    const scrollPosition = useScrollPosition();
-const handleClickScroll = (event) => {
-  var attribute = event.currentTarget.getAttribute('to');
 
-    const element = document.getElementById(attribute);
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -148,7 +139,7 @@ const handleClickScroll = (event) => {
           <OutlinedButton target="_blank" href="https://bscscan.com/token/0xcb3e4688c4cd90022f74f5c70a775172ecab4d52" arrow fit>
             TOKEN ADDRESS
           </OutlinedButton>
-          <CustomButton fullWidth={isSmallScreen}  to={"join-us"} onClick={handleClickScroll} >BUY NOW</CustomButton>
+          <CustomButton fullWidth={isSmallScreen} >BUY NOW</CustomButton>
           </Stack>
           
         </Stack>
