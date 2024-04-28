@@ -26,20 +26,18 @@ const Section8 = () => {
         </Typography>
      <Grid container spacing={10} flexWrap="wrap-reverse" alignItems="center">
         {/* Left */}
-        <Grid item xs={12} md={6}>
-          <Box sx={{ px: { xs: 2, md: 5, lg: 7 } }}>
+        <Grid item xs={12} md={7}>
           <img
             src={GroupCatsImage}
             style={{ width: "100%", objectFit: "contain" }}
           />
-        </Box>
         </Grid>
 
         {/* Right */}
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={5}>
           <Box sx={{ width: '100%' }}>
             <div className="emdeb-responsive">
-                 <iframe width={'375'} height={'625'} src={'https://bbcat-swap.vercel.app/'}></iframe>
+                 <iframe frameBorder={'0'} width={'375'} height={'625'} src={'https://bbcat-swap.vercel.app/'}></iframe>
              </div>
             
            </Box>
