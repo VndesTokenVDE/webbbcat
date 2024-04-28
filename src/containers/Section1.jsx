@@ -11,6 +11,7 @@ import {
 import React from "react";
 import LaunchButton from "../components/Buttons/LaunchButton";
 import OutlinedButton from "../components/Buttons/OutlinedButton";
+import useScrollPosition from "../../hooks/useScrollPosition";
 import { section1Content } from "../utils/content";
 import AppleIcon from "@mui/icons-material/Apple";
 import GoogleIcon from "@mui/icons-material/Google";
@@ -44,6 +45,16 @@ const CustomButton = ({ children, ...props }) => (
 );
 
 const Section1 = () => {
+    const scrollPosition = useScrollPosition();
+const handleClickScroll = (event) => {
+  var attribute = event.currentTarget.getAttribute('to');
+
+    const element = document.getElementById(attribute);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -137,7 +148,7 @@ const Section1 = () => {
           <OutlinedButton target="_blank" href="https://bscscan.com/token/0xcb3e4688c4cd90022f74f5c70a775172ecab4d52" arrow fit>
             TOKEN ADDRESS
           </OutlinedButton>
-          <CustomButton fullWidth={isSmallScreen}>BUY NOW</CustomButton>
+          <CustomButton fullWidth={isSmallScreen}  to={"join-us"} onClick={handleClickScroll} >BUY NOW</CustomButton>
           </Stack>
           
         </Stack>
