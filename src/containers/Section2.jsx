@@ -14,7 +14,7 @@ const CustomCounter = ({
   decimals = false,
 }) => (
   <Stack spacing={{ xs: 1, md: 2 }} alignItems="center">
-    <CountUp prefix={before} suffix={after} end={counter} decimals={decimals}>
+    <CountUp start={'0'}  prefix={before} suffix={after} end={counter} >
       {({ countUpRef }) => (
         <Title variant={{ xs: "h4", md: "h2" }} sx={{ fontWeight: 400 }}>
           <span ref={countUpRef} />
