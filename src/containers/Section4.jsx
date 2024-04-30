@@ -4,12 +4,37 @@ import OutlinedButton from "../components/Buttons/OutlinedButton";
 import LaunchButton from "../components/Buttons/LaunchButton";
 import Title from "../components/Title";
 import { section4Content } from "../utils/content";
-
+import useScrollPosition from "../hooks/useScrollPosition";
 const { top, bottom } = section4Content;
+const CustomButton = ({ children, ...props }) => (
+  <Button  arrow fit
+    variant="contained"
+    sx={{
+      borderRadius: 4,
+      color: "text.primary",
+      borderColor: "text.primary",
+      height: 58,
+      px: 2,
+    }}
+    {...props}
+  >
+    {children}
+  </Button>
+);
 
 const Section4 = () => {
   const [tabValue, setTabValue] = useState(0);
+   const scrollPosition = useScrollPosition();
+const handleClickScrollto = (event) => {
+  var attribute = event.currentTarget.getAttribute('to');
 
+    const element = document.getElementById(attribute);
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
   return (
     <Container id={"about"} sx={{ mt: { xs: 15, md: 20, lg: 25 } }}>
       {/* TOP */}
@@ -25,7 +50,7 @@ const Section4 = () => {
              <p> {top.subtitle3}</p>
             </div>
 
-            <LaunchButton sx={{ borderRadius: 3 }} />
+             <CustomButton to={"join-us"} onClick={handleClickScrollto} fullWidth={isSmallScreen} >BUY NOW</CustomButton>
           </Stack>
         </Grid>
 
