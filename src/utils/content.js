@@ -100,8 +100,8 @@ export const section2Content = {
   items: [
     { counter: 20, before: "$", after: "M+", subtitle: "Liquidity" },
     { counter: 150, before: "", after: "M", subtitle: "Total Supply" },
-    { counter: 20, after: "M+", subtitle: "Pooled CAT", decimals: true },
-    { counter: 0.83, after: "$", subtitle: "Start", decimals: true },
+    { counter: 20, before: "",after: "M+", subtitle: "Pooled CAT", decimals: true },
+    { counter: 0.83, before: "",after: "$", subtitle: "Start", decimals: true },
   ],
 };
 
