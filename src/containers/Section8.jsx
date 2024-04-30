@@ -3,6 +3,7 @@ import React from "react";
 import OutlinedButton from "../components/Buttons/OutlinedButton";
 import Title from "../components/Title";
 import { section8Content } from "../utils/content";
+import Swap from "../pages/Swap";
 
 const { title, subtitle, caption, GroupCatsImage,Socials } = section8Content;
 
@@ -36,9 +37,7 @@ const Section8 = () => {
         {/* Right */}
         <Grid item xs={12} md={5}>
           <Box sx={{ width: '100%' }}>
-            <div className="emdeb-responsive">
-                 <iframe frameBorder={'0'} width={'375'} height={'625'} src={'https://bbcat-swap.vercel.app/'}></iframe>
-             </div>
+           <Swap />
             
            </Box>
         </Grid>
