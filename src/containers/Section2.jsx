@@ -3,7 +3,6 @@ import React from "react";
 import CountUp from "react-countup";
 import Title from "../components/Title";
 import { section2Content } from "../utils/content";
-import VisibilitySensor from 'react-visibility-sensor';
 
 const { title,items } = section2Content;
 
@@ -15,11 +14,11 @@ const CustomCounter = ({
   decimals = false,
 }) => (
   <Stack spacing={{ xs: 1, md: 2 }} alignItems="center">
-    <CountUp start={'0'}  prefix={before} suffix={after} end={counter},decimals={decimals} >
+    <CountUp prefix={before} suffix={after} end={counter} decimals={decimals} >
       {({ countUpRef }) => (
-        <VisibilitySensor variant={{ xs: "h4", md: "h2" }} sx={{ fontWeight: 400 }}>
+        <Title variant={{ xs: "h4", md: "h2" }} sx={{ fontWeight: 400 }}>
           <span ref={countUpRef} />
-        </VisibilitySensor>
+        </Title>
       )}
     </CountUp>
 
