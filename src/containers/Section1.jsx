@@ -28,7 +28,7 @@ const {
 } = section1Content;
 
 const CustomButton = ({ children, ...props }) => (
-  <Button target="_blank" href="https://pancakeswap.finance/swap?outputCurrency=0xcB3E4688C4cd90022F74f5C70A775172eCaB4D52&chainId=56" arrow fit
+  <Button  arrow fit
     variant="outlined"
     sx={{
       borderRadius: 4,
