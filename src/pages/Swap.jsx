@@ -25,16 +25,10 @@ init({
   wallets: [injected, walletConnect],
   chains: [
     {
-      id: "0x1",
-      token: "ETH",
-      label: "Ethereum Mainnet",
-      rpcUrl: "https://ethereum.kyberengineering.io"
-    },
-    {
-      id: "0x89",
-      token: "MATIC",
-      label: "Polygon",
-      rpcUrl: "https://polygon.kyberengineering.io"
+      id: "0x38",
+      token: "BNB",
+      label: "Binance Smart Chain",
+      rpcUrl: "https://bsc-dataseed.binance.org"
     }
   ]
 })
