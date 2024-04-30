@@ -115,7 +115,7 @@ export const section3Link = {
     { logo: CoinBrain, name: "CoinBrain", link: "https://coinbrain.com/coins/bnb-0xcb3e4688c4cd90022f74f5c70a775172ecab4d52" },
     { logo: CoinRanking, name: "CoinRanking", link: "https://coinranking.com/coin/G8yrtG-jj+bbcat-cat" },
     { logo: Okx, name: "OKX", link: "https://www.okx.com/vi/web3/dex-market/detail/56/0xcb3e4688c4cd90022f74f5c70a775172ecab4d52" },
-    { logo: BSnScan, name: "BSnScan", link: "https://bscscan.com/assets/bsc/images/svg/logos/logo-light.svg?v=24.4.4.0" },
+    { logo: BSnScan, name: "BSnScan", link: "https://bscscan.com/token/0xcb3e4688c4cd90022f74f5c70a775172ecab4d52" },
   
   ],
 };
