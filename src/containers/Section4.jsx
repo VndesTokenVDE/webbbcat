@@ -6,7 +6,7 @@ import Title from "../components/Title";
 import { section4Content } from "../utils/content";
 import useScrollPosition from "../hooks/useScrollPosition";
 const { top, bottom } = section4Content;
-const CustomButton = ({ children, ...props }) => (
+const CustomButton4 = ({ children, ...props }) => (
   <Button  arrow fit
     variant="contained"
     sx={{
@@ -25,7 +25,7 @@ const CustomButton = ({ children, ...props }) => (
 const Section4 = () => {
   const [tabValue, setTabValue] = useState(0);
    const scrollPosition = useScrollPosition();
-const handleClickScrollto = (event) => {
+const handleClickScrollto4 = (event) => {
   var attribute = event.currentTarget.getAttribute('to');
 
     const element = document.getElementById(attribute);
@@ -50,7 +50,7 @@ const handleClickScrollto = (event) => {
              <p> {top.subtitle3}</p>
             </div>
 
-             <CustomButton to={"join-us"} onClick={handleClickScrollto} fullWidth={isSmallScreen} >BUY NOW</CustomButton>
+             <CustomButton4 to={"join-us"} onClick={handleClickScrollto4} >BUY NOW</CustomButton4>
           </Stack>
         </Grid>
 
