@@ -72,7 +72,7 @@ const [{ chains, connectedChain, settingChain }, setChain] = useSetChain()
     if (previouslyConnectedWallets?.length) {
       async function setWalletFromLocalStorage() {
         const walletConnected = await connect({
-          autoSelect: !wallet ? false : previouslyConnectedWallets[0]
+          autoSelect: previouslyConnectedWallets[0]
         })
       }
       setWalletFromLocalStorage()
