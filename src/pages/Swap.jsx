@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Widget } from "@kyberswap/widgets"
-import { init, useWallets, useConnectWallet } from "@web3-onboard/react"
+import { init, useWallets, useConnectWallet,useSetChain } from "@web3-onboard/react"
 import injectedModule from "@web3-onboard/injected-wallets"
 import { ethers } from "ethers"
 import walletConnectModule from "@web3-onboard/walletconnect"
@@ -35,7 +35,7 @@ init({
 
 function Swap() {
   const [{ wallet, connecting }, connect, disconnect] = useConnectWallet()
-
+const [{ chains, connectedChain, settingChain }, setChain] = useSetChain()
   // create an ethers provider
   let ethersProvider
 
@@ -48,6 +48,7 @@ function Swap() {
   const [chainId, setChainId] = useState(56)
 
   useEffect(() => {
+    setChain({ chainId: 56 })
     ethersProvider?.getNetwork().then(res => setChainId(res.chainId))
   }, [ethersProvider])
 
